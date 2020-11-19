@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="sfondo">
+
+<!-- Input città -->
+<div class="container container2" >
+  <div class="row" >
+    <div class="col" >
+     </div >
+
+    <div class="col-sm" >
+      <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="City name" aria-label="Recipient's username"  id="input">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button">Send</button>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="col">
+    </div >
+  </div >
+</div >
+
+
+<!-- informazioni -->
+<div class="container information">
+  <div class="row">
+    <div class="col-sm">
+      <h2 id="city"></h2>
+      <p id="temperatura"></p>
+    </div>
+    <div class="col-sm">
+      <img src="" id="meteo">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <p class="dettagli" id="minima"></p>
+      <p class="dettagli" id="massima"></p>
+      <p class="dettagli" id="umidita"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <script src="bundle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+  </body>
+</html>
