@@ -29,7 +29,7 @@ function showError(error){
 
 
 async function getWeather(lat,lon){
-  let response = await fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&appid="+apy_key);
+  let response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&units=metric&appid="+apy_key);
   let weather= await response.json();
   change(weather);
 }
@@ -41,7 +41,7 @@ async function getWeather(lat,lon){
 button.addEventListener('click', showWeather);
 
 async function showWeather(){
-    let response =await fetch("http://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=metric&appid="+apy_key);
+    let response =await fetch("https://api.openweathermap.org/data/2.5/weather?q="+input.value+"&units=metric&appid="+apy_key);
     if (!response.ok) {
     alert('Città errata');
   }else{
